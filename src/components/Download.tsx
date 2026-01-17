@@ -30,7 +30,9 @@ const Download = () => {
                 {/* App Store Buttons */}
                 <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
                   <a
-                    href="#"
+                    href="https://play.google.com/store/apps/details?id=com.iprism.waysafesnew&hl=en_IN"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center gap-3 px-6 py-4 bg-foreground rounded-xl text-background hover:scale-105 transition-transform duration-300 w-full sm:w-auto justify-center"
                   >
                     <Play className="w-8 h-8" />
@@ -40,7 +42,9 @@ const Download = () => {
                     </div>
                   </a>
                   <a
-                    href="#"
+                    href="https://apps.apple.com/in/app/waysafes/id6739804527"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center gap-3 px-6 py-4 bg-foreground rounded-xl text-background hover:scale-105 transition-transform duration-300 w-full sm:w-auto justify-center"
                   >
                     <Apple className="w-8 h-8" />
