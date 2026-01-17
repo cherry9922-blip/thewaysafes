@@ -1,29 +1,65 @@
-import { QrCode, Smartphone, Bell, Users } from "lucide-react";
+import { UserPlus, LogIn, Car, CreditCard, MapPin, Mail, QrCode, Smartphone, Link, Bell } from "lucide-react";
 
 const steps = [
   {
-    icon: QrCode,
+    icon: UserPlus,
     number: "01",
-    title: "Get Your Sticker",
-    description: "Receive your unique Waysafes QR code sticker to place on your vehicle",
+    title: "Signup",
+    description: "Enter the requirement, details & set your user ID and password",
+  },
+  {
+    icon: LogIn,
+    number: "02",
+    title: "Login",
+    description: "Login with user ID and password",
+  },
+  {
+    icon: Car,
+    number: "03",
+    title: "Attach Vehicle",
+    description: "Select the Attach vehicle option and enter your vehicle details",
+  },
+  {
+    icon: CreditCard,
+    number: "04",
+    title: "Do Subscription",
+    description: "Subscribe with your preferred plan from the available affordable plans",
+  },
+  {
+    icon: MapPin,
+    number: "05",
+    title: "Enter Shipping Address",
+    description: "Enter your residential or office address and submit to get the Waysafes QR sticker",
+  },
+  {
+    icon: Mail,
+    number: "06",
+    title: "Receive QR Sticker",
+    description: "Get the Waysafes QR sticker through post",
+  },
+  {
+    icon: QrCode,
+    number: "07",
+    title: "Stick the QR",
+    description: "Stick the Waysafes QR on your vehicle",
   },
   {
     icon: Smartphone,
-    number: "02",
-    title: "Download the App",
-    description: "Install Waysafes app and register your vehicle with your details",
+    number: "08",
+    title: "Connect with QR",
+    description: "Select 'Connect with QR link' option in the app",
   },
   {
-    icon: Users,
-    number: "03",
-    title: "Add Family Members",
-    description: "Add emergency contacts who will be notified during any incident",
+    icon: Link,
+    number: "09",
+    title: "Link Your App",
+    description: "Link your Waysafes app with QR code",
   },
   {
     icon: Bell,
-    number: "04",
-    title: "Stay Protected",
-    description: "Get instant alerts for accidents, theft, parking issues, and more",
+    number: "10",
+    title: "Enjoy Services",
+    description: "Enjoy the Waysafes services and alerts",
   },
 ];
 
@@ -49,34 +85,34 @@ const HowItWorks = () => {
         </div>
 
         {/* Steps */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
           {steps.map((step, index) => (
             <div
               key={step.number}
               className="relative group"
             >
-              {/* Connector Line */}
-              {index < steps.length - 1 && (
-                <div className="hidden lg:block absolute top-14 left-[60%] w-full h-0.5 bg-gradient-to-r from-primary/50 to-primary/10" />
-              )}
-
               {/* Card */}
-              <div className="relative p-8 rounded-2xl bg-secondary/50 border border-border hover:border-primary/50 transition-all duration-300 card-hover">
+              <div className="relative p-6 rounded-2xl bg-secondary/50 border border-border hover:border-primary/50 transition-all duration-300 card-hover h-full">
                 {/* Number */}
-                <span className="absolute -top-4 -right-4 text-6xl font-bold text-primary/10 font-serif">
+                <span className="absolute -top-3 -right-3 text-5xl font-bold text-primary/10 font-serif">
                   {step.number}
                 </span>
 
+                {/* Step Badge */}
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium mb-4">
+                  Step {index + 1}
+                </div>
+
                 {/* Icon */}
-                <div className="w-16 h-16 rounded-2xl bg-gradient-gold flex items-center justify-center mb-6 glow-gold group-hover:scale-110 transition-transform duration-300">
-                  <step.icon className="w-8 h-8 text-primary-foreground" />
+                <div className="w-14 h-14 rounded-xl bg-gradient-gold flex items-center justify-center mb-4 glow-gold group-hover:scale-110 transition-transform duration-300">
+                  <step.icon className="w-7 h-7 text-primary-foreground" />
                 </div>
 
                 {/* Content */}
-                <h3 className="text-xl font-semibold text-foreground mb-3">
+                <h3 className="text-lg font-semibold text-foreground mb-2">
                   {step.title}
                 </h3>
-                <p className="text-muted-foreground">
+                <p className="text-sm text-muted-foreground">
                   {step.description}
                 </p>
               </div>
