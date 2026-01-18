@@ -1,5 +1,13 @@
 import { Check, Crown, Star, Shield } from "lucide-react";
 
+const standardFeatures = [
+  "QR Sticker for Vehicle",
+  "Advanced Safety Features",
+  "Emergency Alerts",
+  "Priority Support",
+  "Family Notifications",
+];
+
 const plans = [
   {
     name: "Silver",
@@ -8,12 +16,7 @@ const plans = [
     icon: Shield,
     color: "from-gray-400 to-gray-500",
     borderColor: "border-gray-400",
-    features: [
-      "QR Sticker for Vehicle",
-      "Emergency Alerts",
-      "24/7 Support",
-      "Basic Safety Features",
-    ],
+    features: standardFeatures,
   },
   {
     name: "Gold",
@@ -23,13 +26,7 @@ const plans = [
     color: "from-gold to-gold-light",
     borderColor: "border-gold",
     popular: true,
-    features: [
-      "Everything in Silver",
-      "Priority Support",
-      "Advanced Safety Features",
-      "Family Notifications",
-      "Best Value",
-    ],
+    features: standardFeatures,
   },
   {
     name: "Platinum",
@@ -38,13 +35,7 @@ const plans = [
     icon: Crown,
     color: "from-purple-400 to-purple-600",
     borderColor: "border-purple-400",
-    features: [
-      "Everything in Gold",
-      "Premium Support",
-      "All Safety Features",
-      "Extended Warranty",
-      "Maximum Savings",
-    ],
+    features: standardFeatures,
   },
 ];
 
@@ -54,7 +45,7 @@ const Pricing = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-playfair">
-            Choose Your <span className="text-gold">Plan</span>
+            Subscription <span className="text-gold">Plan</span>
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
             Select the perfect subscription plan for your vehicle safety needs
@@ -107,11 +98,7 @@ const Pricing = () => {
                   href="https://play.google.com/store/apps/details?id=com.iprism.waysafesnew&hl=en_IN"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`block w-full py-3 rounded-lg font-semibold text-center transition-all duration-300 ${
-                    plan.popular
-                      ? "bg-gradient-to-r from-gold to-gold-light text-black hover:shadow-lg hover:shadow-gold/30"
-                      : "bg-gray-800 text-white hover:bg-gray-700"
-                  }`}
+                  className="block w-full py-3 rounded-lg font-semibold text-center transition-all duration-300 bg-gradient-to-r from-gold to-gold-light text-black hover:shadow-lg hover:shadow-gold/30 hover:scale-105"
                 >
                   Subscribe Now
                 </a>
