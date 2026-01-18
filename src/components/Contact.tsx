@@ -22,38 +22,38 @@ const Contact = () => {
         </div>
 
         {/* Contact Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6 max-w-5xl mx-auto">
           {/* Phone */}
           <a
             href="tel:7710810844"
-            className="group p-6 rounded-2xl border border-border bg-secondary/30 hover:border-primary/50 transition-all duration-300 text-center card-hover"
+            className="group p-4 md:p-6 rounded-xl md:rounded-2xl border border-border bg-secondary/30 hover:border-primary/50 transition-all duration-300 text-center card-hover"
           >
-            <div className="w-14 h-14 mx-auto rounded-xl bg-gradient-gold flex items-center justify-center mb-4 glow-gold group-hover:scale-110 transition-transform duration-300">
-              <Phone className="w-7 h-7 text-primary-foreground" />
+            <div className="w-10 h-10 md:w-14 md:h-14 mx-auto rounded-lg md:rounded-xl bg-gradient-gold flex items-center justify-center mb-2 md:mb-4 glow-gold group-hover:scale-110 transition-transform duration-300">
+              <Phone className="w-5 h-5 md:w-7 md:h-7 text-primary-foreground" />
             </div>
-            <h3 className="font-semibold text-foreground mb-2">Call Us</h3>
-            <p className="text-2xl font-bold text-primary">7710810844</p>
+            <h3 className="font-semibold text-foreground mb-1 md:mb-2 text-sm md:text-base">Call Us</h3>
+            <p className="text-lg md:text-2xl font-bold text-primary">7710810844</p>
           </a>
 
           {/* 24/7 Support */}
-          <div className="group p-6 rounded-2xl border border-border bg-secondary/30 text-center">
-            <div className="w-14 h-14 mx-auto rounded-xl bg-gradient-gold flex items-center justify-center mb-4 glow-gold">
-              <Clock className="w-7 h-7 text-primary-foreground" />
+          <div className="group p-4 md:p-6 rounded-xl md:rounded-2xl border border-border bg-secondary/30 text-center">
+            <div className="w-10 h-10 md:w-14 md:h-14 mx-auto rounded-lg md:rounded-xl bg-gradient-gold flex items-center justify-center mb-2 md:mb-4 glow-gold">
+              <Clock className="w-5 h-5 md:w-7 md:h-7 text-primary-foreground" />
             </div>
-            <h3 className="font-semibold text-foreground mb-2">Support Hours</h3>
-            <p className="text-lg text-primary font-bold">24×7 Available</p>
+            <h3 className="font-semibold text-foreground mb-1 md:mb-2 text-sm md:text-base">Support Hours</h3>
+            <p className="text-base md:text-lg text-primary font-bold">24×7 Available</p>
           </div>
 
           {/* Email */}
           <a
             href="mailto:support@waysafes.com"
-            className="group p-6 rounded-2xl border border-border bg-secondary/30 hover:border-primary/50 transition-all duration-300 text-center card-hover"
+            className="group p-4 md:p-6 rounded-xl md:rounded-2xl border border-border bg-secondary/30 hover:border-primary/50 transition-all duration-300 text-center card-hover"
           >
-            <div className="w-14 h-14 mx-auto rounded-xl bg-gradient-gold flex items-center justify-center mb-4 glow-gold group-hover:scale-110 transition-transform duration-300">
-              <Mail className="w-7 h-7 text-primary-foreground" />
+            <div className="w-10 h-10 md:w-14 md:h-14 mx-auto rounded-lg md:rounded-xl bg-gradient-gold flex items-center justify-center mb-2 md:mb-4 glow-gold group-hover:scale-110 transition-transform duration-300">
+              <Mail className="w-5 h-5 md:w-7 md:h-7 text-primary-foreground" />
             </div>
-            <h3 className="font-semibold text-foreground mb-2">Email Us</h3>
-            <p className="text-sm text-muted-foreground">support@waysafes.com</p>
+            <h3 className="font-semibold text-foreground mb-1 md:mb-2 text-sm md:text-base">Email Us</h3>
+            <p className="text-xs md:text-sm text-muted-foreground break-all">support@waysafes.com</p>
           </a>
 
           {/* Location */}
@@ -61,12 +61,12 @@ const Contact = () => {
             href="https://maps.google.com/maps?q=15.8311067%2C78.0393688&z=17&hl=en"
             target="_blank"
             rel="noopener noreferrer"
-            className="group p-6 rounded-2xl border border-border bg-secondary/30 hover:border-primary/50 transition-all duration-300 text-center card-hover"
+            className="group p-4 md:p-6 rounded-xl md:rounded-2xl border border-border bg-secondary/30 hover:border-primary/50 transition-all duration-300 text-center card-hover"
           >
-            <div className="w-14 h-14 mx-auto rounded-xl bg-gradient-gold flex items-center justify-center mb-4 glow-gold group-hover:scale-110 transition-transform duration-300">
-              <MapPin className="w-7 h-7 text-primary-foreground" />
+            <div className="w-10 h-10 md:w-14 md:h-14 mx-auto rounded-lg md:rounded-xl bg-gradient-gold flex items-center justify-center mb-2 md:mb-4 glow-gold group-hover:scale-110 transition-transform duration-300">
+              <MapPin className="w-5 h-5 md:w-7 md:h-7 text-primary-foreground" />
             </div>
-            <h3 className="font-semibold text-foreground mb-2 flex items-center justify-center gap-1">
+            <h3 className="font-semibold text-foreground mb-1 md:mb-2 text-sm md:text-base flex items-center justify-center gap-1">
               Location <ExternalLink className="w-3 h-3" />
             </h3>
             <p className="text-xs text-muted-foreground">View on Map</p>
@@ -74,12 +74,12 @@ const Contact = () => {
         </div>
 
         {/* Address Section */}
-        <div className="max-w-2xl mx-auto mt-12 p-6 rounded-2xl border border-border bg-secondary/30 text-center">
-          <h3 className="font-semibold text-foreground mb-4 text-lg">Our Office Address</h3>
-          <div className="text-muted-foreground space-y-1">
+        <div className="max-w-2xl mx-auto mt-8 md:mt-12 p-4 md:p-6 rounded-2xl border border-border bg-secondary/30 text-center">
+          <h3 className="font-semibold text-foreground mb-3 md:mb-4 text-base md:text-lg">Our Office Address</h3>
+          <div className="text-muted-foreground space-y-1 text-sm md:text-base">
             <p className="font-medium text-primary">Abdullah Khan Estate</p>
             <p>Skanda Business Hub Complex, Office Number 1</p>
-            <p>2nd Floor, Daddy's Road</p>
+            <p>2nd Floor, Waysafes</p>
             <p className="font-medium">Kurnool - 518001</p>
           </div>
           <a
