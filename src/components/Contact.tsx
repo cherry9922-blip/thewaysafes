@@ -1,4 +1,4 @@
-import { Phone, Mail, Clock, MapPin, Instagram, Facebook, ExternalLink } from "lucide-react";
+import { Phone, Clock, MapPin, ExternalLink } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -22,7 +22,7 @@ const Contact = () => {
         </div>
 
         {/* Contact Cards */}
-        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 md:gap-6 max-w-4xl mx-auto">
           {/* Phone */}
           <a
             href="tel:7710810844"
@@ -44,17 +44,6 @@ const Contact = () => {
             <p className="text-base md:text-lg text-primary font-bold">24×7 Available</p>
           </div>
 
-          {/* Email */}
-          <a
-            href="mailto:support@waysafes.com"
-            className="group p-4 md:p-6 rounded-xl md:rounded-2xl border border-border bg-secondary/30 hover:border-primary/50 transition-all duration-300 text-center card-hover"
-          >
-            <div className="w-10 h-10 md:w-14 md:h-14 mx-auto rounded-lg md:rounded-xl bg-gradient-gold flex items-center justify-center mb-2 md:mb-4 glow-gold group-hover:scale-110 transition-transform duration-300">
-              <Mail className="w-5 h-5 md:w-7 md:h-7 text-primary-foreground" />
-            </div>
-            <h3 className="font-semibold text-foreground mb-1 md:mb-2 text-sm md:text-base">Email Us</h3>
-            <p className="text-xs md:text-sm text-muted-foreground break-all">support@waysafes.com</p>
-          </a>
 
           {/* Location */}
           <a
