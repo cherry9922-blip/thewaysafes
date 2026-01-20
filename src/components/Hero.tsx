@@ -25,12 +25,15 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center">
           {/* Logo Animation */}
           <div className="mb-8 animate-fade-in">
-            <div className="inline-flex items-center justify-center p-1 rounded-full bg-gradient-gold glow-gold-lg">
-              <img
-                src={logo}
-                alt="Waysafes Logo"
-                className="w-28 h-28 md:w-36 md:h-36 rounded-full object-cover animate-pulse-gold"
-              />
+            <div className="inline-flex flex-col items-center">
+              <div className="inline-flex items-center justify-center p-1 rounded-full bg-gradient-gold glow-gold-lg">
+                <img
+                  src={logo}
+                  alt="Waysafes Logo"
+                  className="w-28 h-28 md:w-36 md:h-36 rounded-full object-cover animate-pulse-gold"
+                />
+              </div>
+              <h2 className="mt-4 text-2xl md:text-3xl font-serif font-bold text-gradient-gold">Waysafes</h2>
             </div>
           </div>
 
