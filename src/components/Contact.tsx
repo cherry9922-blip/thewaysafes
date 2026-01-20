@@ -94,22 +94,6 @@ const Contact = () => {
           </a>
         </div>
 
-        {/* Social Media */}
-        <div className="flex items-center justify-center gap-4 mt-12">
-          <span className="text-muted-foreground">Follow Us:</span>
-          <a
-            href="#"
-            className="w-12 h-12 rounded-full border border-border bg-secondary/30 flex items-center justify-center hover:border-primary hover:bg-primary/10 transition-all duration-300"
-          >
-            <Instagram className="w-5 h-5 text-foreground" />
-          </a>
-          <a
-            href="#"
-            className="w-12 h-12 rounded-full border border-border bg-secondary/30 flex items-center justify-center hover:border-primary hover:bg-primary/10 transition-all duration-300"
-          >
-            <Facebook className="w-5 h-5 text-foreground" />
-          </a>
-        </div>
       </div>
     </section>
   );
