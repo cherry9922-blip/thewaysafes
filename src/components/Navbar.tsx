@@ -11,9 +11,9 @@ const Navbar = () => {
     { name: "How It Works", href: "#how-it-works" },
     { name: "Subscription Plan", href: "#pricing" },
     { name: "Product", href: "#stickers" },
-    { name: "About", href: "#about" },
-    { name: "Cab Registration Fee", href: "#cab-services" },
+    { name: "Cab Registration", href: "#cab-services" },
     { name: "Download", href: "#download" },
+    { name: "About", href: "#about" },
     { name: "Contact", href: "#contact" },
   ];
 
