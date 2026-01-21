@@ -1,4 +1,5 @@
-import { Phone, Clock, MapPin, ExternalLink, MessageCircle } from "lucide-react";
+import { Phone, Clock, MapPin, ExternalLink } from "lucide-react";
+import whatsappLogo from "@/assets/whatsapp-logo.webp";
 
 const Contact = () => {
   return (
@@ -46,13 +47,13 @@ const Contact = () => {
 
           {/* WhatsApp */}
           <a
-            href="https://wa.me/917710810844"
+            href="https://wa.me/+917710810844"
             target="_blank"
             rel="noopener noreferrer"
             className="group p-4 md:p-6 rounded-xl md:rounded-2xl border border-border bg-secondary/30 hover:border-primary/50 transition-all duration-300 text-center card-hover"
           >
-            <div className="w-10 h-10 md:w-14 md:h-14 mx-auto rounded-lg md:rounded-xl bg-gradient-gold flex items-center justify-center mb-2 md:mb-4 glow-gold group-hover:scale-110 transition-transform duration-300">
-              <MessageCircle className="w-5 h-5 md:w-7 md:h-7 text-primary-foreground" />
+            <div className="w-10 h-10 md:w-14 md:h-14 mx-auto rounded-lg md:rounded-xl flex items-center justify-center mb-2 md:mb-4 group-hover:scale-110 transition-transform duration-300">
+              <img src={whatsappLogo} alt="WhatsApp" className="w-10 h-10 md:w-14 md:h-14 object-contain" />
             </div>
             <h3 className="font-semibold text-foreground mb-1 md:mb-2 text-sm md:text-base">WhatsApp</h3>
             <p className="text-xs md:text-sm text-muted-foreground">Chat with us</p>
