@@ -9,6 +9,8 @@ import Download from "@/components/Download";
 import AboutUs from "@/components/AboutUs";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import PrintPage from "@/components/PrintPage";
+
 const Index = () => {
   return (
     <main className="min-h-screen">
@@ -23,6 +25,7 @@ const Index = () => {
       <AboutUs />
       <Contact />
       <Footer />
+      <PrintPage />
     </main>
   );
 };
